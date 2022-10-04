@@ -81,3 +81,118 @@ ageOti > ageCompany; // true
 ageOti < ageCompany; // false
 ageOti >= 25 // true
 
+let oti = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + '!';
+
+let multipleLines = 'String with \n\
+multiple \n\
+lines';
+
+console.log(oti);
+console.log(multipleLines);
+
+// ES6 can write easier!
+oti = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}!`;
+
+multipleLines = `String with
+multiple
+lines`;
+
+console.log(oti);
+console.log(multipleLines);
+
+// IF ELSE STATEMENT
+age = 15;
+
+if (age >= 18) {
+    console.log(`Sarah can start driving license 🖼️`)
+} else {
+    const yearsLeft = 18 - age;
+        console.log(`Sarah is too young. Wait another ${yearsLeft} years`)
+}
+
+let yourBirthYear = 1999;
+
+let century;
+if (yourBirthYear <= 2000) {
+    century = 20;
+    console.log(`You born in ${century}th Century! Most generation in here.`)
+} else {
+    century = 21;
+    console.log(`You born in ${century}st Century! Gen z a bit, Gen alpha most.`)
+}
+
+// type conversion
+const inputYear = '1996';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Oti'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion (auto conversion with +, - sign)
+console.log('I am ' + 23 + ' years old'); // + sign convert any type to string
+console.log('23' - '10' - 3); // another sign convert any type to number
+console.log('23' / '2');
+
+// falsy and truthy
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('oti'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0; // folse
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log("You should get a job");
+}
+
+let height; // undefined
+if (height) {
+    console.log('YAY! height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
+
+// === and == operator
+age = '18';
+if (age === 18) console.log('You just became an adult'); // false
+if (age == 18) console.log('You just became an adult'); // true
+
+age = 19;
+if (age === 18) console.log('You just became an adult'); // false
+if (age == 18) console.log('You just became an adult'); // true
+
+age = 18;
+if (age === 18) console.log('You just became an adult'); // true
+if (age == 18) console.log('You just became an adult'); // true
+
+// Logical Operators (Computer Science)
+const hasDriverLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || !hasGoodVision);
+
+// Use if else
+const shouldDrive = hasDriverLicense && hasGoodVision;
+
+if(shouldDrive) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive...');
+}
+
+const isTired = true; // C
+console.log(hasDriverLicense || hasGoodVision || isTired);
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive...');
+}
