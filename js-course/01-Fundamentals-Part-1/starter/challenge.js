@@ -68,3 +68,7 @@ if (dolphinsAvgScore > koalasAvgScore) {
     console.log('Draw, please challenge again ✌️');
 }
 
+// Challenge #4
+const billValue = 430;
+const totalValue = (billValue >= 50 && billValue <= 300 ? tip = billValue * 0.15 : tip = billValue * 0.20) + billValue;
+console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value ${totalValue}`);

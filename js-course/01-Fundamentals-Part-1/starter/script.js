@@ -196,3 +196,73 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
+
+// Switch Statement
+const day = 'friday';
+
+switch(day) {
+    case 'monday': // day === 'thursday'
+        console.log('Plan my OKRs');
+        console.log('Go to read books or newsletters');
+        break;
+    case 'tuesday':
+        console.log('Repetition');
+        break;
+    case 'wednesday' || 'thursday':
+        console.log('Repetition');
+        break;
+    case 'friday':
+        console.log('Repetition');
+        break;
+    case 'saturday':
+        console.log('Dialogue with my friends');
+        break;
+    case 'sunday':
+        console.log('Dialogue with my partner');
+        break;
+    default:
+        console.log('Not a valid day'); 
+}   
+
+if (day === 'monday') {
+    console.log('Do my OKRs')
+    console.log('Go to read books or newsletters');
+} else if (day === 'tuesday' || day === 'wednesday' || day === 'thursday' || day === 'friday') {
+    console.log('Repetition and visit my mom and dialogue with my friends');
+} else if (day === 'saturday') {
+    console.log('Dialogue with my friends');
+} else if (day === 'sunday') {
+    console.log('Dialogue with my partner');
+} else {
+    console.log('Not a valid day');
+}
+
+// expression and statement
+3 + 4;
+true && false && !false;
+
+if (23 > 1) {
+    const str = '23 is bigger';
+}
+const me = 'Oti';
+console.log(`I'm born in ${birthYear}. They call me "${me}"`);
+
+//Conditional (Ternary) operator
+ age = 23;
+/*  age >= 18 ? console.log('I like to eat vegan 😊') :
+ console.log('I like to drink water'); */
+
+ const drink = age >= 19 ? 'vagetable smoothie' : 'water';
+ console.log(drink);
+
+ let drink2;
+ if (age >= 19) {
+    drink2 = 'vagetable smoothie';
+ } else {
+    drink2 = 'water';
+ }
+ console.log(drink2);
+
+ console.log(`I like to drink ${ age >= 19 ? 'vagetable smoothie' : 'water'}`)
+
+ 
