@@ -1,4 +1,4 @@
-// #1
+/* // #1
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 let scoreDolphins = calcAverage(44, 23, 71);
@@ -18,9 +18,9 @@ checkWinner(scoreDolphins, scoreKoalas);
 //test 2
 scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
-checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas); */
 
-//Challenge #2
+/* //Challenge #2
 
 const bills = [125, 555, 44];
 const tips = [];
@@ -46,7 +46,7 @@ const calcTip = function (bill) {
 console.log(bills);
 console.log(calcTip(bills));
 console.log(tips);
-console.log(totals);
+console.log(totals); */
 
 //Challenge #3
 const data1 = {
@@ -83,3 +83,40 @@ data1.calcBMI();
 data2.calcBMI();
 console.log(checkBMI());
 
+// Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+function calcTip(arr) {
+    for (let i = 0; i <= arr.length - 1; i++) {
+        if (arr[i] > 50 && arr[i] < 300) {
+            arrTip = arr[i] * 0.15;
+            tips.push(arrTip);
+            totals.push(arr[i] + tips[i]);
+        } else {
+            arrTip = arr[i] * 0.20;
+            tips.push(arrTip);
+            totals.push(arr[i] + tips[i]);
+        }
+    }
+    return tips, totals;
+}
+
+calcTip(bills);
+
+console.log(bills);
+console.log(tips);
+console.log(totals);
+
+function calcAverage(arr) {
+    let sum = 0;
+
+    for (let i = 0; i <= arr.length - 1; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+console.log(calcAverage(totals));

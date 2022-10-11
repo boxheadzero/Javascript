@@ -212,13 +212,13 @@ console.log(oti.getSummary()); // must be fix! */
 
 // Looping Arrays, Breaking and Continuing
 
-const oti = {
+/* const oti = {
     firstName: 'Oti',
     lastName: 'Design',
     birthYear: 2010,
     job: 'Entrepeneur',
     friends: ['Prince', 'Boss', 'Golf'],
-    hasDriversLicense: true,
+    hasDriversLicense: true
 };
 
 const years = [1991, 2007, 2001, 1921];
@@ -242,4 +242,43 @@ for (let i = 0; i < oti.length; i++) {
     if (typeof oti[i] === 'number') break;
 
     console.log(oti[i], typeof oti[i]);
+} */
+
+// backward loop and loop in loop
+const oti = [
+    'Oti',
+   'Design',
+    2010,
+    'Entrepeneur',
+    ['Prince', 'Boss', 'Golf'],
+    true
+]
+
+// Decreasing in Array
+for (let i = oti.length - 1; i >= 0; i--) {
+    console.log(i, oti[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 💯`);
+    }
+}
+
+// while loop
+/* let rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weight repetition ${rep} 💯`);
+    rep++;
+} */
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
 }
