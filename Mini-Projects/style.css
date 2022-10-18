@@ -1,0 +1,142 @@
+:root {
+  --color-primary: #1f2833;
+  --color-secondary: #515466;
+  --text-primary: #66fcf1;
+  --text-secondary: #45a29e;
+  --text-tertiary: #c5c6c7;
+  --shadow: 1rem 1.5rem 2.7rem -1rem rgba(0, 0, 0, 0.11);
+  --shadow-2: 1rem 0.7rem 2rem -1rem rgba(0, 0, 0, 0.11);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.e-style {
+  margin: 1rem;
+  padding: 1rem;
+  height: 10rem;
+  width: 20rem;
+  background-color: var(--color-secondary);
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: var(--shadow), inset var(--shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.e-style:hover {
+  transform: scale(1.02) translateY(-5px);
+}
+
+.special-keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.key {
+  display: flex;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 0.7rem;
+  background-color: var(--color-secondary);
+  box-shadow: var(--shadow), inset var(--shadow);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.key-info {
+  text-transform: uppercase;
+}
+
+.key-status {
+  color: var(--text-tertiary);
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Source Code Pro', 'Quicksand', sans-serif;
+}
+
+.rows {
+  display: flex;
+  margin-top: 5rem;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.row-key {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  text-align: center;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--text-primary);
+  color: var(--color-primary);
+}
+
+.large-text {
+  width: 6rem;
+}
+
+.large-text-2 {
+  width: 9rem;
+}
+
+.large-text-3 {
+  width: 10rem;
+}
+
+.large-text-4 {
+  width: 15rem;
+}
